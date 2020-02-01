@@ -48,6 +48,7 @@ autom4te.cache
 
 # intelliJ
 
+.gradle
 .idea
 
 # java Project
@@ -56,3 +57,4 @@ autom4te.cache
 *.class
 *.jar
 *.gradle
+src/
