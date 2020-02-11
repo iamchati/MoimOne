@@ -57,4 +57,3 @@ autom4te.cache
 *.class
 *.jar
 *.gradle
-src/
