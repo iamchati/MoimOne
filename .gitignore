@@ -56,4 +56,3 @@ autom4te.cache
 /bin
 *.class
 *.jar
-*.gradle

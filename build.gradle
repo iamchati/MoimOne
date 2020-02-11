@@ -1,0 +1,36 @@
+// Project plug-in dependencies setting
+buildscript {
+    // Global variable in build.gradle
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    // Dependency library received from a remote repository
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+// Apply declared plug-in dependencies
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.moimone'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+// Required dependencies for project development
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
